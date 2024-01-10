@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Dancing+Script:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">    <title>Document</title>
+</head>
+<body>
+        <div class="w-75 mx-auto py-5">
+            <h1 class=" text-center mb-5">Bookmarker</h1>
+            <hr>
+            <h2 class="momo text-center mb-5">
+                    <i class="marker1 fa-solid fa-bookmark"></i>
+                    Bookmark your favorite site
+                    <i class=" marker2 fa-solid fa-bookmark"></i>
+            </h2>
+            <i class="fa-solid fa-book-bookmark"></i>
+            <label for="bookName mb-4">Site Name</label>
+            <input type="text" placeholder="Bookmark Name" oninput="validateName(this)" id="bookName" class="form-control mb-3">
+            <i class="fa-solid fa-link"></i>
+            <label for="siteURL mb-4">Site URL</label>
+            <input type="email" placeholder="Website URL"  id="siteURL" class="form-control mb-3">
+            <div class="cont">
+                <button id="btn" class="btn" onclick="addBook()"> submit</button>
+
+            </div>
+            <hr>
+        </div>
+        <div class="w-75 mx-auto py-5">
+            <input type="text" oninput="searchBook(this.value)" id="search" placeholder="search By Name" class="form-control mb-3">
+            <!-- <button onclick="searchBook()">search</button> -->
+        </div>
+        <div class="w-75 mx-auto ">
+            <table class="table text-center">
+                <thead>
+                    <th>index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                  
+                </tbody>
+            </table>
+        </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/first.js"></script>
+</body>
+</html>

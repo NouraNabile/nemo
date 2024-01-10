@@ -1,0 +1,44 @@
+body{
+    background-color: #F7ECDE;
+}
+
+h1{
+    font-family: 'Dancing Script';
+}
+
+hr {
+    border: none;
+    border-top: 3px dotted black;
+  }
+h2.momo{
+    /* background: linear-gradient(90deg, rgba(53, 163, 70, 0.8), rgba(191, 202, 10, 0.8)); */
+    background: linear-gradient(to right,#037722, #d3c907);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cont{
+    text-align: center;
+}
+.cont button{
+    background-color: #d54c26;
+    color: white;
+    width: 150px;
+}
+.cont button:hover{
+    background-color: #b53e1d;
+    color: white;
+}
+.marker1{
+    color: #3FA55B;
+  
+}
+.marker2{
+    color: #B2AB49;
+}
+button #btn .btn{
+    background-color: #BB4120 !important;
+}
+.form-control:focus{
+    box-shadow: 0 0 5px 2px #ECA568;
+}
+ 
